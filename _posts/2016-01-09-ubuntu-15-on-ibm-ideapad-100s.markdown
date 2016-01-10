@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ubuntu 15.10 on IBM Ideapad 100s"
+title:  "Ubuntu 15.10 on IBM (lenovo) Ideapad 100s"
 date:   2016-01-09 00:30:37 -0500
 categories: allsbe update
 ---
