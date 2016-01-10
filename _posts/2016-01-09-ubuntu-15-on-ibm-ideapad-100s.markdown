@@ -29,7 +29,7 @@ Saved the settings, rebooted, and blamo!  I was presented with a graphical Ubunt
 
 I went with mostly defaults, except for drive partitioning.  I selected custom partitioning, and configured the following GPT (gdisk helped create the GPT scheme) disk layout:
 
-```
+```bash
 mmc0:
 
 Fat32 EFI  512MB - Important, set this partition with the boot flag.
