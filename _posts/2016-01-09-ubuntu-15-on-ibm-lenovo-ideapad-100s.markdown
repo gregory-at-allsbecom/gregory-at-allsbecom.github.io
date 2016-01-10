@@ -48,6 +48,6 @@ I went with mostly defaults, except for drive partitioning.  I selected custom p
   **ext4 /home remaining space on 128GB MMC**  
 
 
-That was that.  The installer did it's thing, I rebooted and had a nicely usable system with everything I needed, already working, and already installed, from office, to development, sound, video, trackpad, and on and on...honestly, I don't, and probably never will understand, why people deal with Windows and having to individually install every little thing they need to do basic computing work.
+That was that.  The installer did it's thing, I rebooted and had a nicely usable system with everything I needed, already working, and already installed, from office, to development, sound, video, trackpad, and on and on - and, oh yeah, by the way, *my 128gb MicroSD card which didn't work at all in Windows 10, worked perfectly in Ubuntu as my SWAP and /home partition, go figure!!!*...honestly, I don't, and probably never will understand, why people deal with Windows and having to individually install every little thing they need to do basic computing work.
 
 I hope this helps you down the road to being productive with Linux on an ideapad 100s, it was a bit of a journey for me to get here.  If not, I hope you found this information useful.  Take care!
