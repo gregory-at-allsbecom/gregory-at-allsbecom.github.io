@@ -19,7 +19,7 @@ My USB drive was /dev/sdb.  I ran gparted and ensured the "boot" flag was set on
 
 
 
-cd /home/username/Downloads
+cd '/home/username/Downloads'
 sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb
 
 
@@ -34,12 +34,12 @@ I went with mostly defaults, except for drive partitioning.  I selected custom p
 ####  mmc0:
 
 Fat32 EFI  512MB - Important, set this partition with the boot flag.
-ext4 /     Delete all existing partitions and used remaining space on 64gb MMC
+ext4 '/'     Delete all existing partitions and used remaining space on 64gb MMC
 
 ####  mmc1
 
 SWAP SWAP  4068MB
-ext4 /home remaining space on 128GB MMC
+ext4 '/home' remaining space on 128GB MMC
 
 
 That was that.  The installer did it's thing, I rebooted and had a nicely usable system with everything I needed already installed, from office, to development, and on and on...honestly, I don't, and probably never will understand, why people deal with Windows and having to individually install every little thing they need to do basic computing work; graphics, were good, wireless good, and sound good; that I plan to enjoy using for some time to come!
