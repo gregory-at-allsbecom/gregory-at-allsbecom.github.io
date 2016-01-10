@@ -17,9 +17,10 @@ Opened a terminal window:
 I had preformmated the drive as fat32.
 My USB drive was /dev/sdb.  I ran gparted and ensured the "boot" flag was set on the drive.  Then I wrote the ISO image to the USB drive.
 
-```bash
-        cd /home/username/Downloads
-        sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb
+```
+
+        `cd /home/username/Downloads`
+        `sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb`
 ```
 
 
@@ -29,13 +30,15 @@ Next I inserted the USB drive in the ideapad, powered on, hit the "fn" + F2 key 
 Saved the settings, rebooted, and blamo!  I was presented with a graphical Ubuntu desktop at boot.  I chose to install after connecting the Intel Wireless to my wireless network.
 
 I went with mostly defaults, except for drive partitioning.  I selected custom partitioning, and configured the following GPT (gdisk helped create the GPT scheme) disk layout:
-```bash
-        mmc0:
+
+```
+
+        `mmc0:`
 
         Fat32 EFI  512MB - Important, set this partition with the boot flag.
         ext4 /     Delete all existing partitions and used remaining space on 64gb MMC
 
-        mmc1
+        `mmc1:`
 
         SWAP SWAP  4068MB
         ext4 /home remaining space on 128GB MMC
