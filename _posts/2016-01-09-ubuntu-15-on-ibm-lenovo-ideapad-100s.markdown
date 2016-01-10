@@ -22,7 +22,7 @@ My USB drive was /dev/sdb.  I ran gparted and ensured the "boot" flag was set on
 
 
 
-Next I inserted the USB drive in the ideapad, powered on, hit the "fn" + F2 key to enter bios setup.  I enabled "UEFI" and "Secure Boot", also enabled USB boot, and set the USB drive as boot drive.
+Next I inserted the USB drive in the ideapad, powered on, hit the "fn" + F2 key to enter bios setup.  I enabled "UEFI" and "Secure Boot", also enabled USB boot, and set the USB drive as boot drive.  I disabled "Optimized OS Defaults".
 
 
 Saved the settings, rebooted, and blamo!  I was presented with a graphical Ubuntu desktop at boot.  I chose to install after connecting the Intel Wireless to my wireless network.
