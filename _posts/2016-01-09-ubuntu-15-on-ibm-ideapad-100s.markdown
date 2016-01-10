@@ -17,12 +17,12 @@ Opened a terminal window:
 I had preformmated the drive as fat32.
 My USB drive was /dev/sdb.  I ran gparted and ensured the "boot" flag was set on the drive.  Then I wrote the ISO image to the USB drive.
 
-```bash
 
-  cd /home/username/Downloads
-  sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb
 
-```
+cd /home/username/Downloads
+sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb
+
+
 
 Next I inserted the USB drive in the ideapad, powered on, hit the "fn" + F2 key to enter bios setup.  I enabled "UEFI" and "Secure Boot", also enabled USB boot, and set the USB drive as boot drive.
 
@@ -33,17 +33,15 @@ I went with mostly defaults, except for drive partitioning.  I selected custom p
 
 ####  mmc0:
 
-  Fat32 EFI  512MB - Important, set this partition with the boot flag.
-  ext4 /     Delete all existing partitions and used remaining space on 64gb MMC
+Fat32 EFI  512MB - Important, set this partition with the boot flag.
+ext4 /     Delete all existing partitions and used remaining space on 64gb MMC
 
 ####  mmc1
 
-  SWAP SWAP  4068MB
-  ext4 /home reaming space on 128GB MMC
+SWAP SWAP  4068MB
+ext4 /home remaining space on 128GB MMC
 
 
 That was that.  The installer did it's thing, I rebooted and had a nicely usable system with everything I needed already installed, from office, to development, and on and on...honestly, I don't, and probably never will understand, why people deal with Windows and having to individually install every little thing they need to do basic computing work; graphics, were good, wireless good, and sound good; that I plan to enjoy using for some time to come!
 
-I hope this helps you down the road to being productive with Linux on an ideapad 100s, it was a bit of a journey for me to get here.  If not, I hope you found this information useful.  Take care!  
-
-
+I hope this helps you down the road to being productive with Linux on an ideapad 100s, it was a bit of a journey for me to get here.  If not, I hope you found this information useful.  Take care!
