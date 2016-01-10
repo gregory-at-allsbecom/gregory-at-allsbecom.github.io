@@ -18,10 +18,8 @@ I had preformmated the drive as fat32.
 My USB drive was /dev/sdb.  I ran gparted and ensured the "boot" flag was set on the drive.  Then I wrote the ISO image to the USB drive.
 
 ```
-cd /home/username/Downloads
-```
-```
-sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb
+**cd /home/username/Downloads**  
+**sudo dd if=ubuntu-15.10-desktop-amd64.iso of=/dev/sdb**  
 ```
 
 
@@ -33,22 +31,13 @@ Saved the settings, rebooted, and blamo!  I was presented with a graphical Ubunt
 I went with mostly defaults, except for drive partitioning.  I selected custom partitioning, and configured the following GPT (gdisk helped create the GPT scheme) disk layout:
 
 ```
-mmc0:
-```
-```
-Fat32 EFI  512MB - Important, set this partition with the boot flag.
-```
-```
-ext4 /     Delete all existing partitions and used remaining space on 64gb MMC
-```
-```
-mmc1:
-```
-```
-SWAP SWAP  4068MB
-```
-```
-ext4 /home remaining space on 128GB MMC
+**mmc0:**  
+  **Fat32 EFI  512MB - Important, set this partition with the boot flag.**  
+  **ext4 /     Delete all existing partitions and used remaining space on 64gb MMC**  
+  
+**mmc1:**  
+  **SWAP SWAP  4068MB**  
+  **ext4 /home remaining space on 128GB MMC**  
 ```
 
 That was that.  The installer did it's thing, I rebooted and had a nicely usable system with everything I needed already installed, from office, to development, and on and on...honestly, I don't, and probably never will understand, why people deal with Windows and having to individually install every little thing they need to do basic computing work; graphics, were good, wireless good, and sound good; that I plan to enjoy using for some time to come!
